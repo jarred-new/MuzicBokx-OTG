@@ -1,0 +1,146 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="112dp"
+		android:padding="8dp"
+		android:background="@color/colorPrimary"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:orientation="vertical">
+			<Button
+				android:id="@+id/openButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Open"
+				android:textSize="12sp" />
+			<Button
+				android:id="@+id/loadBgButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Load Bg"
+				android:textSize="12sp" />
+		</LinearLayout>
+		<HorizontalScrollView
+			android:id="@+id/hscroll2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_weight="1">
+			<LinearLayout
+				android:id="@+id/linear6"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<ImageButton
+					android:id="@+id/play"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/icon_play_arrow_round"
+					android:scaleType="center" />
+				<ImageButton
+					android:id="@+id/pause"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/icon_pause_round"
+					android:scaleType="center" />
+				<ImageButton
+					android:id="@+id/rewind"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/icon_fast_rewind_round"
+					android:scaleType="center" />
+				<ImageButton
+					android:id="@+id/stop"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/icon_stop_round"
+					android:scaleType="center" />
+				<ImageButton
+					android:id="@+id/forward"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/icon_fast_forward_round"
+					android:scaleType="center" />
+				<CheckBox
+					android:id="@+id/loopBox"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Loop Music"
+					android:focusable="true" />
+			</LinearLayout>
+		</HorizontalScrollView>
+		<LinearLayout
+			android:id="@+id/linear5"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:orientation="vertical">
+			<Button
+				android:id="@+id/aboutButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="About"
+				android:textSize="12sp" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linear2"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#000000"
+		android:gravity="bottom"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear7"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="@color/colorPrimaryDark"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/albumName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="TextView"
+				android:textSize="12sp"
+				android:textStyle="bold" />
+			<TextView
+				android:id="@+id/timeCode"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="TextView"
+				android:textSize="12sp" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/mainBgLayout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center">
+			<VideoView
+				android:id="@+id/bg"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center"
+			/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
